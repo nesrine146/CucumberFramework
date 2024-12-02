@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="10" failures="1" name="runner.TestRunner" time="163.073" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="14.0.1+7"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\nesrine\eclipse-workspace\cucumberProject"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\nesrine\eclipse-workspace\cucumberProject"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\nesrine\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\nesrine\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14284633620378360065.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk-14.0.1/bin/server;C:/Program Files/Java/jdk-14.0.1/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\Program Files\Java\jdk-14.0.1\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\nesrine\AppData\Local\Microsoft\WindowsApps;;C:\Users\nesrine\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nesrine\AppData\Roaming\npm;C:\Users\nesrine\Desktop;;."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\nesrine"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="nesrine"/>
+    <property name="java.class.path" value="C:\Users\nesrine\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.16.0.20200610-1735\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test -Dstyle.color=always"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-14.0.1"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\nesrine\eclipse-workspace\cucumberProject\EMBEDDED"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Login functionality" name="Login with valid credentials #1" time="19.575"/>
+  <testcase classname="Login functionality" name="Login with valid credentials #2" time="19.02"/>
+  <testcase classname="Login functionality" name="Login with valid credentials #3" time="16.428"/>
+  <testcase classname="Login functionality" name="Login with invalid credentials" time="16.653"/>
+  <testcase classname="Login functionality" name="Login with valid email and invalid password" time="17.339"/>
+  <testcase classname="Login functionality" name="Login with invalid email and valid password" time="17.805"/>
+  <testcase classname="Login functionality" name="Login without providing any credentials" time="17.025"/>
+  <testcase classname="Search functionality" name="User searches for a valid product" time="13.979">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepDefinitions.Search.user_should_get_valid_product_displayed_in_search_results(Search.java:51)
+	at ✽.User should get valid product displayed in search results(file:///C:/Users/nesrine/eclipse-workspace/cucumberProject/src/test/resources/features/Search.feature:8)
+</failure>
+    <system-out>
+Scenario: User searches for a valid product                      &amp;#27;[90m# src/test/resources/features/Search.feature:4&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mUser opens the application&amp;#27;[0m                               &amp;#27;[90m# stepDefinitions.Search.user_opens_the_application()&amp;#27;[0m
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mUser enters valid product &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;HP&quot;&amp;#27;[0m&amp;#27;[32m into Search box field&amp;#27;[0m      &amp;#27;[90m# stepDefinitions.Search.user_enters_valid_product_into_search_box_field(java.lang.String)&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mUser clicks on Search button&amp;#27;[0m                               &amp;#27;[90m# stepDefinitions.Search.user_clicks_on_search_button()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mUser should get valid product displayed in search results&amp;#27;[0m &amp;#27;[90m# stepDefinitions.Search.user_should_get_valid_product_displayed_in_search_results()&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepDefinitions.Search.user_should_get_valid_product_displayed_in_search_results(Search.java:51)
+	at âœ½.User should get valid product displayed in search results(file:///C:/Users/nesrine/eclipse-workspace/cucumberProject/src/test/resources/features/Search.feature:8)
+&amp;#27;[0m
+
+    Embedding User searches for a valid product [image2/png 49811 bytes]
+
+</system-out>
+    <system-err>nov. 27, 2024 4:20:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+nov. 27, 2024 4:20:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.86. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.17.0` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you&apos;re using and the version number of the artifact is the same as Selenium&apos;s.
+</system-err>
+  </testcase>
+  <testcase classname="Search functionality" name="User searches for an invalid product" time="11.83"/>
+  <testcase classname="Search functionality" name="User searches without any product" time="13.419"/>
+</testsuite>
